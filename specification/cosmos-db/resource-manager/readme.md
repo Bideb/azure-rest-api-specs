@@ -27,14 +27,28 @@ These are the global settings for the Cosmos-DB API.
 ``` yaml
 title: CosmosDBManagementClient
 openapi-type: arm
-tag: package-2021-07-preview
+tag: package-2021-12
 ```
 
+
+### Tag: package-2021-12
+
+These settings apply only when `--tag=package-2021-12` is specified on the command line.
+
+```yaml $(tag) == 'package-2021-12'
+input-file:
+  - Microsoft.DocumentDB/stable/2021-12-15/cosmos-db.json
+  - Microsoft.DocumentDB/stable/2021-12-15/notebook.json
+  - Microsoft.DocumentDB/stable/2021-12-15/privateEndpointConnection.json
+  - Microsoft.DocumentDB/stable/2021-12-15/privateLinkResources.json
+  - Microsoft.DocumentDB/stable/2021-12-15/rbac.json
+  - Microsoft.DocumentDB/stable/2021-12-15/restorable.json
+```
 ### Tag: package-2021-07-preview
 
 These settings apply only when `--tag=package-2021-07-preview` is specified on the command line.
 
-```yaml $(tag) == 'package-2021-07-preview'
+``` yaml $(tag) == 'package-2021-07-preview'
 input-file:
   - Microsoft.DocumentDB/preview/2021-07-01-preview/cosmos-db.json
   - Microsoft.DocumentDB/preview/2021-07-01-preview/notebook.json
@@ -52,7 +66,7 @@ modelerfour:
 
 These settings apply only when `--tag=package-2021-06` is specified on the command line.
 
-```yaml $(tag) == 'package-2021-06'
+``` yaml $(tag) == 'package-2021-06'
 input-file:
   - Microsoft.DocumentDB/stable/2021-06-15/cosmos-db.json
   - Microsoft.DocumentDB/stable/2021-06-15/notebook.json
